@@ -1,3 +1,3 @@
 import streamlit
 
-streamlit.title('Streamlit as business app UI . . . We will find out'). 
+streamlit.title('How well will Streamlit UI work. We\'ll find out!')
