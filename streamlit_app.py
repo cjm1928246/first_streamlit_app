@@ -41,3 +41,6 @@ my_cur.execute("select * from fruityvice")
 my_data_rows = my_cur.fetchall()
 streamlit.text("The fruit list contains:")
 streamlit.dataframe(my_data_rows)
+
+add_fruit = streamlit.text_input('Additional fruit to add?','Apple')
+streamlit.write('The user entered ', add_fruit)
