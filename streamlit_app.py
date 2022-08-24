@@ -53,7 +53,7 @@ if streamlit.button('Get Fruit List'):
 #streamlit.stop()
 def insert_fruit_row(new_fruit):
     with my_cnx.cursor() as my_cur:
-        my_cur.execute("insert into pc_rivery_db.public.fruityvice (name) values ('test')")
+        my_cur.execute("insert into pc_rivery_db.public.fruityvice (name) values ('" + new_fruit + "')")
         return "Fruit " + new_fruit + " added"
     
 add_fruit = streamlit.text_input('Additional fruit to add?')
